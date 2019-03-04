@@ -1,0 +1,110 @@
+/*重置样式*/
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  font: 14px "微软雅黑";
+}
+a {
+  text-decoration: none;
+  display: block;
+  color: white;
+}
+li {
+  list-style: none;
+}
+img {
+  display: block;
+}
+input {
+  outline: none;
+  border: none;
+}
+.clearfix,
+#wrap > .content > .nav .list {
+  *zoom: 1;
+}
+.clearfix:after,
+#wrap > .content > .nav .list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#wrap {
+  position: relative;
+}
+#wrap > .content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 4rem;
+  background: pink;
+}
+#wrap > .content > .nav {
+  position: relative;
+  box-sizing: border-box;
+  height: 2.62222222rem;
+  padding: 0.45925926rem 0 0.20740741rem 0;
+  background: #eeeeee;
+}
+#wrap > .content > .nav:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: black;
+}
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  #wrap > .content > .nav:after {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  #wrap > .content > .nav:after {
+    transform: scaleY(0.3333333);
+  }
+}
+#wrap > .content > .nav .list {
+  padding: 0;
+  float: left;
+  white-space: nowrap;
+}
+#wrap > .content > .nav .list li {
+  display: inline-block;
+  height: 1.91111111rem;
+  line-height: 1.91111111rem;
+  padding: 0 0.56296296rem;
+}
+#wrap > .content > .nav .list li a {
+  font-size: 0.97777778rem;
+  color: #020202;
+}
+#wrap > .content > .nav .list li a.active {
+  background: #690;
+}
+#wrap > .content > .nav .list li a.active a {
+  color: #fff;
+}
+/*# sourceMappingURL=content.css.map */
